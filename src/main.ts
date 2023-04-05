@@ -8,7 +8,7 @@ async function bootstrap() {
 
   const PORT = config.get<number>('API_PORT');
 
-  await app.listen(PORT || 7000, () => {
+  await app.listen(PORT, () => {
     console.log('hello');
   });
 }
